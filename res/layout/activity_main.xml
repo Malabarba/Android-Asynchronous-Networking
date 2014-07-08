@@ -1,22 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
+  
+  <LinearLayout
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" >
     
-    <EditText android:id="@+id/email_address"
+    <EditText
+        android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:hint="@string/email_address"
-     />
+        android:hint="@string/username" />
     
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="verifyEmail"
+        android:onClick="fetchRepos"
         android:text="@string/button_submit" />
     
+  </LinearLayout>
+  <ListView
+      android:id="@+id/repos_list_view"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true" />
+  
+  <TextView 
+      android:id="@+id/empty_list_view"
+      android:visibility="gone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:layout_marginTop="20dp"
+      android:gravity="center"
+      android:linksClickable="false"
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+      android:scrollHorizontally="false"
+      android:text="@string/empty_list" />
+  
+  <ProgressBar
+      android:id="@+id/progress_view"
+      android:visibility="gone"
+      android:indeterminate="true"
+      android:indeterminateOnly="true"
+      style="@android:style/Widget.ProgressBar.Inverse"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp" />
+
+  
 </LinearLayout>
 
