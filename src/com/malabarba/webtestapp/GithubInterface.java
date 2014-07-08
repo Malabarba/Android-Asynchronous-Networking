@@ -2,6 +2,7 @@ package com.malabarba.webtestapp;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -9,11 +10,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
-
-import android.content.Context; // 
+import android.content.Context; 
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.widget.ArrayAdapter;

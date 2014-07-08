@@ -8,3 +8,10 @@ asynchornously fetch a list of repos for that user.
 
 The UI is updated with a spinning circle, and then with the results
 list, and it's all done in quite an elegant way.
+
+It employs:
+
+- AsyncTask;
+- HttpURLConnection;
+- JSONReader (and similar);
+- ProgressBar.

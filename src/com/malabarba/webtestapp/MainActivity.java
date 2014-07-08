@@ -1,8 +1,5 @@
 package com.malabarba.webtestapp;
 
-// import com.malabarba.util.App;
-// import com.malabarba.util.SettingsManager;
-
 import android.view.inputmethod.InputMethodManager;
 import android.os.Bundle;
 import android.app.Activity;
